@@ -1,12 +1,3 @@
-.background {
-  background-image: url('C:\Users\Acer\Desktop\introduce myself\introduce-myself\myself\picture\1600w-CqBn578wibg.webp');
-  /* background-size: cover; หรือใช้ contain, auto ตามความเหมาะสม */
-  background-position: center;
-  background-repeat: no-repeat; /* ป้องกันการทำซ้ำของภาพ */
-  height: 100vh; /* ให้เต็มความสูงของ viewport */
-  width: 1450px;
-}
-
 h1 {
   color: black;
 }
