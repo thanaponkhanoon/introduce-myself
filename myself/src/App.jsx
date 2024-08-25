@@ -3,6 +3,7 @@ import Home from './component/Home';
 import Appbar from './component/Appbar';
 import About from './component/About';
 import Education from './component/Education';
+import Experience from './component/Experience';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes>
       </div>
     </Router>

@@ -12,8 +12,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import SchoolIcon from '@mui/icons-material/School';
+import LogoDevIcon from '@mui/icons-material/LogoDev';
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
 
@@ -25,13 +27,26 @@ function Appbar() {
     };
 
     const DrawerList = (
-        <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+        <Box 
+            sx={{ 
+                width: 250, 
+                height: '100%', 
+                backgroundImage: 'url(https://wallpapercave.com/wp/wp5006064.jpg)', 
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+            }} 
+            role="presentation" 
+            onClick={toggleDrawer(false)}
+        >
             <List>
-                {['Education', 'About'].map((text, index) => (
+                {['Home', 'Education', 'About', 'Experience'].map((text) => (
                     <ListItem key={text} disablePadding>
-                        <ListItemButton component={Link} to={`/${text.toLowerCase()}`}>
+                        <ListItemButton component={Link} to={text === 'Home' ? '/' : `/${text.toLowerCase()}`}>
                             <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                {text === 'Home' && <HomeIcon />}
+                                {text === 'Education' && <SchoolIcon />}
+                                {text === 'About' && <LogoDevIcon />}
+                                {text === 'Experience' && <WorkHistoryIcon />}
                             </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemButton>
@@ -39,24 +54,19 @@ function Appbar() {
                 ))}
             </List>
             <Divider />
-            <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                            </ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
         </Box>
     );
 
     return (
         <div>
-            <AppBar position="fixed">
+            <AppBar 
+                position="fixed"
+                sx={{ 
+                    backgroundImage: 'url(https://i.pinimg.com/736x/57/28/6d/57286df05d3470fd18ef883df200ca67.jpg)', 
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                }}
+            >
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -68,15 +78,33 @@ function Appbar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        News
+                    <Typography 
+                        variant="h6" 
+                        component={Link} 
+                        to="/" 
+                        sx={{ 
+                            flexGrow: 1,
+                            textDecoration: 'none',
+                            color: 'inherit'
+                        }}
+                    >
+                        My Website
                     </Typography>
                     <a
                         href="https://github.com/thanaponkhanoon/introduce-myself"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub repository"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            textDecoration: 'none',
+                            color: 'inherit'
+                        }}
                     >
+                        <Typography variant="body1" sx={{ mr: 1 }}>
+                            My GitHub
+                        </Typography>
                         <IconButton size="large" color="inherit">
                             <GitHubIcon />
                         </IconButton>
