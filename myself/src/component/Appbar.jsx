@@ -14,10 +14,12 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
-import LogoDevIcon from '@mui/icons-material/LogoDev';
+import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import PlayForWorkIcon from '@mui/icons-material/PlayForWork';
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Appbar() {
     const [open, setOpen] = React.useState(false);
@@ -26,9 +28,12 @@ function Appbar() {
         setOpen(newOpen);
     };
 
+    const wh = { color: 'white' };
+
     const DrawerList = (
         <Box 
             sx={{ 
+                color: 'white',
                 width: 250, 
                 height: '100%', 
                 backgroundImage: 'url(https://wallpapercave.com/wp/wp5006064.jpg)', 
@@ -39,14 +44,26 @@ function Appbar() {
             onClick={toggleDrawer(false)}
         >
             <List>
-                {['Home', 'Education', 'About', 'Experience'].map((text) => (
+                {['Home', 'Education', 'About', 'Experience', 'Project', 'Personal'].map((text) => (
                     <ListItem key={text} disablePadding>
-                        <ListItemButton component={Link} to={text === 'Home' ? '/' : `/${text.toLowerCase()}`}>
+                        <ListItemButton 
+                            component={NavLink} 
+                            to={text === 'Home' ? '/' : `/${text.toLowerCase()}`}
+                            sx={({ isActive }) => ({
+                                backgroundColor: isActive ? 'rgba(113, 48, 214, 0.2)' : 'transparent',
+                                '&:hover': {
+                                    backgroundColor: 'rgba(113, 48, 214, 0.3)'
+                                },
+                                color: 'white'
+                            })}
+                        >
                             <ListItemIcon>
-                                {text === 'Home' && <HomeIcon />}
-                                {text === 'Education' && <SchoolIcon />}
-                                {text === 'About' && <LogoDevIcon />}
-                                {text === 'Experience' && <WorkHistoryIcon />}
+                                {text === 'Home' && <HomeIcon style={wh}/>}
+                                {text === 'Education' && <SchoolIcon style={wh}/>}
+                                {text === 'About' && <DisplaySettingsIcon style={wh}/>}
+                                {text === 'Experience' && <WorkHistoryIcon style={wh}/>}
+                                {text === 'Project' && <PlayForWorkIcon style={wh}/>}
+                                {text === 'Personal' && <PermIdentityIcon style={wh}/>}
                             </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemButton>
@@ -64,7 +81,10 @@ function Appbar() {
                 sx={{ 
                     backgroundImage: 'url(https://i.pinimg.com/736x/57/28/6d/57286df05d3470fd18ef883df200ca67.jpg)', 
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center'
+                    backgroundPosition: 'center',
+                    '@media (max-width: 600px)': {
+                        height: 'auto'
+                    }
                 }}
             >
                 <Toolbar>
@@ -80,12 +100,15 @@ function Appbar() {
                     </IconButton>
                     <Typography 
                         variant="h6" 
-                        component={Link} 
+                        component={NavLink} 
                         to="/" 
                         sx={{ 
                             flexGrow: 1,
                             textDecoration: 'none',
-                            color: 'inherit'
+                            color: 'inherit',
+                            '@media (max-width: 600px)': {
+                                fontSize: '1rem'
+                            }
                         }}
                     >
                         My Website

@@ -1,14 +1,25 @@
 import Box from '@mui/material/Box';
 import ReactPlayer from 'react-player';
+import { useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
-function Experience () {
-    const par = { margin: '20px 0 10px 60px' };
+function Experience() {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 60px' };
+    const boxStyle = { 
+        width: isMobile ? '100%' : '1000px', // Full width on mobile
+        height: 'auto', 
+        margin: '20px auto', // Center the boxes
+        border: '1px dashed black',
+    };
     return (
         <>
-        <div style={{margin: '50px 0 0 15px', display: 'flex', justifyContent: 'center'}}>
+        <div style={{margin: '50px 15px 0 15px', display: 'flex', justifyContent: 'center'}}>
             <h2
             style={{
-                fontSize: '2.5em',
+                fontSize: isMobile ? '1.5em' : '2.5em', // Smaller font on mobile
                 fontWeight: 'bold',
                 color: '#fff',
                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
@@ -25,8 +36,8 @@ function Experience () {
                 EXPERIENCE
             </h2>
         </div>
-        <div style={{display: 'flex', margin: '0 0 0 30px'}}>  
-        <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
+        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 0 30px', color: 'white'}}>  
+        <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
             <div style={{margin: '0px 0 0 20px'}}>
                 <span>
                     <h2>
@@ -34,12 +45,12 @@ function Experience () {
                     </h2>
                 </span>
                 <strong style={{ fontSize: '18px', margin: '0 0 0 20px'}}>KIG : KKF international groups co. ltd</strong>
-                <div style={{display: 'flex', alignItems: 'center'}}>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: isMobile ? 'center' : 'flex-start'}}>
                     <img 
                         src="https://kigintergroup.com/public/themes/kig/assets/images/home/logo.png"
                         alt="KIG Logo"
                         style={{
-                            width: '250px',
+                            width: isMobile ? '150px' : '250px',
                             height: 'auto',
                             margin: '5px 10px 0 40px',
                             }}
@@ -70,8 +81,8 @@ function Experience () {
             </div>
             </Box>
         </div>
-        <div style={{display: 'flex', margin: '50px 0 0 30px'}}>  
-        <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
+        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '50px 80px 55px 30px', color: 'white'}}>  
+        <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
             <div style={{margin: '0px 0 0 20px'}}>
                 <span>
                     <h2>
@@ -79,12 +90,12 @@ function Experience () {
                     </h2>
                 </span>
                 <strong style={{ fontSize: '18px', margin: '0 0 0 20px'}}>BANGKOK SMARTCARD SYSTEM COMPANY LIMITED</strong>
-                <div style={{display: 'flex', alignItems: 'center'}}>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: isMobile ? 'center' : 'flex-start'}}>
                     <img 
                         src="https://www.rabbit.co.th/images/rabbit-logo.svg"
                         alt="BSS Logo"
                         style={{
-                            width: '250px',
+                            width: isMobile ? '150px' : '250px',
                             height: 'auto',
                             margin: '5px 10px 0 40px',
                             }}
@@ -123,7 +134,9 @@ function Experience () {
                     - Tailwind CSS maybe good<br />
                     - Free & Open-source & See License<br />
                     </div>
-                    <ReactPlayer url='https://youtu.be/mLR659WgU4w' width='1367px' />
+                    <div>
+                        <ReactPlayer url='https://youtu.be/mLR659WgU4w' width='auto' />
+                    </div>
                 </span>
             </div>
             </Box>
@@ -131,4 +144,4 @@ function Experience () {
         </>
     )  
 }
-export default Experience
+export default Experience;

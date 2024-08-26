@@ -1,13 +1,26 @@
+import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './component/Home';
 import Appbar from './component/Appbar';
 import About from './component/About';
 import Education from './component/Education';
 import Experience from './component/Experience';
+import BackToTop from './component/BackToTop'; 
+import Project from './component/Project';
+import Personal from './component/Personal';
+
+const GlobalStyles = createGlobalStyle`
+  body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+`;
 
 const App = () => {
   return (
     <Router>
+      <GlobalStyles />
       <div style={styles.container}>
         <Appbar />
         <Routes>
@@ -15,7 +28,10 @@ const App = () => {
           <Route path="/education" element={<Education />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/personal" element={<Personal />} />
         </Routes>
+        <BackToTop />
       </div>
     </Router>
   );
