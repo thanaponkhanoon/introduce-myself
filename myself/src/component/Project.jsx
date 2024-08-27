@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
@@ -49,9 +50,9 @@ function Project() {
             MY PROJECT
           </h2>
         </div>
-        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 0 30px', color: 'white'}}>  
+        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 0 80px', color: 'white'}}>  
         <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
-            <div style={{margin: '0px 0 0 20px'}}>
+            <div style={{margin: '0px 20px 0 20px'}}>
                 <span>
                     <h2>
                     2023 : Software Engineer 523332 <small style={{ fontSize: '18px' }}>(ระบบห้องสมุด)</small>
@@ -67,11 +68,30 @@ function Project() {
                             color: 'inherit'
                         }}
                     >
-                        <Typography variant="body1" sx={{ mr: 1 ,color: 'purple'}}>
+                        <Typography variant="body1" sx={{ mr: 1 ,color: '#d140f1'}}>
                             GitHub SE SUT65 Team04
                         </Typography>
                         <IconButton size="large" color="inherit">
                             <GitHubIcon style={{ color: '#d140f1' }} />
+                        </IconButton>
+                    </a>
+                    <a
+                        href="https://web.facebook.com/profile.php?id=100087967613356"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub repository"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            textDecoration: 'none',
+                            color: 'inherit'
+                        }}
+                    >
+                        <Typography variant="body1" sx={{ mr: 1 ,color: 'blue'}}>
+                            Sut-Se65-Team04 
+                        </Typography>
+                        <IconButton size="large" color="inherit">
+                            <FacebookIcon style={{ color: '#3314e3' }} />
                         </IconButton>
                     </a>
                     </h2>
@@ -92,7 +112,62 @@ function Project() {
                         และสามารถตรวจสอบการแจ้งซ่อมอุปกรณ์ย้อนหลังได้
                     </div>
                 </span>
+                <strong style={{ fontSize: '18px', margin: '0 0 0 20px'}}>Stack ที่ใช้</strong>
+                <div style={{
+        margin: '0px 15px 35px 15px', 
+        display: 'flex', 
+        gap: '20px',
+        flexWrap: 'wrap',
+        justifyContent: 'center'
+      }}>
+        {[
+          {
+            src: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+            alt: "React"
+          },
+          {
+            src: "https://miro.medium.com/v2/resize:fit:600/1*i2skbfmDsHayHhqPfwt6pA.png",
+            alt: "Golang"
+          },
+          {
+            src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+            alt: "TypeScript"
+          },
+          {
+            src: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+            alt: "Node JS"
+          },
+          {
+            src: "https://mui.com/static/logo.png",
+            alt: "MUI"
+          }
+        ].map((img, index) => (
+          <img
+            key={index}
+            src={img.src}
+            alt={img.alt}
+            style={{
+              marginTop: '20px',
+              width: '150px',
+              height: '150px',
+              border: '5px solid #2c003e',
+              padding: '5px',
+              boxSizing: 'border-box',
+              borderRadius: '10px',
+              borderStyle: 'solid',
+              borderWidth: '2px',
+              borderColor: 'blue',
+              backgroundColor: '#0f0c29',
+              '@media (max-width: 768px)': {
+                width: '100px',
+                height: '100px',
+              }
+            }}
+          />
+        ))}
+      </div>
             </div>
+            <strong style={{ fontSize: '18px', margin: '0 0 0 40px'}}>เอกสารรายงาน</strong>
             {/* Display PDF in a framed area */}
             <div style={{ margin: '20px auto', width: isMobile ? '100%' : '80%', height: '900px', overflow: 'auto', padding: '10px' }}>
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
@@ -105,12 +180,12 @@ function Project() {
             </div>
             </Box>
         </div>
-        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 0 30px', color: 'white'}}>  
+        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 55px 80px', color: 'white'}}>  
         <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
-            <div style={{margin: '0px 0 0 20px'}}>
+            <div style={{margin: '0 0 0 20px'}}>
                 <span>
                     <h2>
-                    2023 : System Analysis And Design 523331 <small style={{ fontSize: '18px' }}>(ระบบห้องสมุด)</small>
+                    2023 : System Analysis And Design 523331 <small style={{ fontSize: '18px' }}>(ระบบการจองใช้ห้อง)</small>
                     <a
                         href="https://github.com/thanaponkhanoon/sa-65-example"
                         target="_blank"
@@ -123,14 +198,14 @@ function Project() {
                             color: 'inherit'
                         }}
                     >
-                        <Typography variant="body1" sx={{ mr: 1 ,color: 'purple'}}>
+                        <Typography variant="body1" sx={{ mr: 1 ,color: '#d140f1'}}>
                             GitHub SA SUT65 ระบบบันทึกข้อมูลอุปกรณ์
                         </Typography>
                         <IconButton size="large" color="inherit">
                             <GitHubIcon style={{ color: '#d140f1' }} />
                         </IconButton>
                     </a>
-                    <small>and</small>
+                    <small>หรือ</small>
                     <a
                         href="https://github.com/Siriwan38/Sa-65-Group-18"
                         target="_blank"
@@ -143,7 +218,7 @@ function Project() {
                             color: 'inherit'
                         }}
                     >
-                        <Typography variant="body1" sx={{ mr: 1 ,color: 'purple'}}>
+                        <Typography variant="body1" sx={{ mr: 1 ,color: '#d140f1'}}>
                             GitHub SA SUT65 Team18
                         </Typography>
                         <IconButton size="large" color="inherit">
@@ -163,7 +238,62 @@ function Project() {
                         จองใช้ห้องดูอุปกรณ์เสริมได้ เช่น หมายเลขอุปกรณ์ประเภทของอุปกรณ์รวมถึงหากอุปกรณ์ชารุดหรือเสียหาย
                     </div>
                 </span>
+                <strong style={{ fontSize: '18px', margin: '0 0 0 20px'}}>Stack ที่ใช้</strong>
+                <div style={{
+        margin: '0px 15px 35px 15px', 
+        display: 'flex', 
+        gap: '20px',
+        flexWrap: 'wrap',
+        justifyContent: 'center'
+      }}>
+        {[
+          {
+            src: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+            alt: "React"
+          },
+          {
+            src: "https://miro.medium.com/v2/resize:fit:600/1*i2skbfmDsHayHhqPfwt6pA.png",
+            alt: "Golang"
+          },
+          {
+            src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+            alt: "TypeScript"
+          },
+          {
+            src: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+            alt: "Node JS"
+          },
+          {
+            src: "https://mui.com/static/logo.png",
+            alt: "MUI"
+          }
+        ].map((img, index) => (
+          <img
+            key={index}
+            src={img.src}
+            alt={img.alt}
+            style={{
+              marginTop: '20px',
+              width: '150px',
+              height: '150px',
+              border: '5px solid #2c003e',
+              padding: '5px',
+              boxSizing: 'border-box',
+              borderRadius: '10px',
+              borderStyle: 'solid',
+              borderWidth: '2px',
+              borderColor: 'blue',
+              backgroundColor: '#0f0c29',
+              '@media (max-width: 768px)': {
+                width: '100px',
+                height: '100px',
+              }
+            }}
+          />
+        ))}
+      </div>
             </div>
+            <strong style={{ fontSize: '18px', margin: '0 0 0 40px'}}>เอกสารรายงาน</strong>
             {/* Display PDF in a framed area */}
             <div style={{ margin: '20px auto', width: isMobile ? '100%' : '80%', height: '900px', overflow: 'auto', padding: '10px' }}>
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>

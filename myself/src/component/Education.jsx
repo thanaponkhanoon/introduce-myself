@@ -66,7 +66,7 @@ function Education() {
               marginBottom: '20px',
             }}
           />
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: 'center', margin: '0 0 55px 0' }}>
             <h3 style={{ margin: '10px 0' }}>Senior high school and Junior high school</h3>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img
