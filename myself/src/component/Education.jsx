@@ -16,7 +16,7 @@ function Education() {
               boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
               transform: 'scale(1.05)',
               transition: 'transform 0.3s ease-in-out',
-              width: 'fit-content', // Adjust width based on content
+              width: 'fit-content',
             }}
           >
             EDUCATION

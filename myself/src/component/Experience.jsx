@@ -16,25 +16,26 @@ function Experience() {
     };
     return (
         <>
-        <div style={{margin: '50px 15px 0 15px', display: 'flex', justifyContent: 'center'}}>
-            <h2
+        <div style={{ margin: '50px 0 0 15px', display: 'flex', justifyContent: 'center' }}>
+          <h2
             style={{
-                fontSize: isMobile ? '1.5em' : '2.5em', // Smaller font on mobile
-                fontWeight: 'bold',
-                color: '#fff',
-                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-                background: '#282059',
-                padding: '20px',
-                borderRadius: '15px',
-                border: '3px solid #d140f1',
-                textAlign: 'center',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
-                transform: 'scale(1.05)',
-                transition: 'transform 0.3s ease-in-out'
-              }}
-            >
-                EXPERIENCE
-            </h2>
+              fontSize: '2.5em',
+              fontWeight: 'bold',
+              color: '#fff',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+              background: '#282059',
+              padding: '20px',
+              borderRadius: '15px',
+              border: '3px solid #d140f1',
+              textAlign: 'center',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+              transform: 'scale(1.05)',
+              transition: 'transform 0.3s ease-in-out',
+              width: 'fit-content',
+            }}
+          >
+            EXPERIENCE
+          </h2>
         </div>
         <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 0 30px', color: 'white'}}>  
         <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
