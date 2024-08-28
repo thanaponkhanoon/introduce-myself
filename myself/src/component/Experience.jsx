@@ -7,7 +7,7 @@ function Experience() {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 60px' };
+    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 60px', color: 'whitesmoke' };
     const boxStyle = { 
         width: isMobile ? '100%' : '1000px', // Full width on mobile
         height: 'auto', 

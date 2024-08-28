@@ -8,6 +8,7 @@ import Experience from './component/Experience';
 import BackToTop from './component/BackToTop'; 
 import Project from './component/Project';
 import Personal from './component/Personal';
+import Etc from './component/Etc';
 
 const GlobalStyles = createGlobalStyle`
   body, html {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Project />} />
           <Route path="/personal" element={<Personal />} />
+          <Route path="/etc" element={<Etc />} />
         </Routes>
         <BackToTop />
       </div>

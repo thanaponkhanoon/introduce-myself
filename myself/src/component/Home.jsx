@@ -34,7 +34,7 @@ function Home() {
           Welcome To My Website
         </h1>
       </div>
-      <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: isMobile ? '0 50px 55px 50px' : '0 200px 55px 200px' , color: 'white'}}>  
+      <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: isMobile ? '0 50px 55px 50px' : '0 200px 55px 200px' , color: 'whitesmoke'}}>  
             <div style={{margin: '0px 20px 0 20px'}}>
                 <span>
                     <div style={par}>

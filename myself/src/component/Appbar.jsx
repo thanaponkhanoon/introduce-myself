@@ -18,6 +18,7 @@ import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import PlayForWorkIcon from '@mui/icons-material/PlayForWork';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import MoreIcon from '@mui/icons-material/More';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { NavLink } from 'react-router-dom';
 
@@ -44,7 +45,7 @@ function Appbar() {
             onClick={toggleDrawer(false)}
         >
             <List>
-                {['Home', 'Education', 'About', 'Experience', 'Project', 'Personal'].map((text) => (
+                {['Home', 'Education', 'About', 'Experience', 'Project', 'Personal', 'Etc'].map((text) => (
                     <ListItem key={text} disablePadding>
                         <ListItemButton 
                             component={NavLink} 
@@ -64,6 +65,7 @@ function Appbar() {
                                 {text === 'Experience' && <WorkHistoryIcon style={wh}/>}
                                 {text === 'Project' && <PlayForWorkIcon style={wh}/>}
                                 {text === 'Personal' && <PermIdentityIcon style={wh}/>}
+                                {text === 'Etc' && <MoreIcon style={wh}/>}
                             </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemButton>

@@ -47,7 +47,7 @@ function Education() {
                   margin: '0 10px',
                 }}
               />
-              <span>
+              <span style={{color: 'whitesmoke'}}>
                 2019-2024 Bachelor of engineering in Computer engineering, Suranaree University of Technology, Nakhon Ratchasima
               </span>
             </div>
@@ -80,7 +80,7 @@ function Education() {
                   objectFit: 'cover',
                 }}
               />
-              <span>
+              <span style={{color: 'whitesmoke'}}>
                 2013-2018 Graduated from high school in science and mathematics and junior high school at Kamphaeng School.
               </span>
             </div>
