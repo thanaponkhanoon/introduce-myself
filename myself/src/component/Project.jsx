@@ -29,7 +29,7 @@ function Project() {
 
     return (
         <>
-        <div style={{ margin: '50px 0 0 15px', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ margin: '50px 15px 0 15px', display: 'flex', justifyContent: 'center' }}>
           <h2
             style={{
               fontSize: '2.5em',
