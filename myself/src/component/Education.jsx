@@ -55,7 +55,7 @@ function Education() {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <img
-            src="../picture/student.jpg"
+            src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/457137036_2209843539379037_6645935567311944750_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHpYSKe9_a0n_4AxlCX1XbzaHH_jx7QU_tocf-PHtBT-87ePeP0zzwI8PwmHiTNrUIg1ehStk2v9F86D954jdBI&_nc_ohc=xRUMO0qKzyEQ7kNvgGAzMad&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&oh=00_AYDydV8OhTDH77u-lUZ-DEFg3khRNegrCPo5lehZj2Ywqg&oe=66D5A4F4"
             alt="Description of image"
             style={{
               width: '150px',

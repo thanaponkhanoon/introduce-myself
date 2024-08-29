@@ -29,15 +29,15 @@ function Etc () {
                 เวลาว่างได้ศึกษาสิ่งต่างๆ เพิ่มเติมได้แก่
             </h2>
         </div>
-        <div style={{margin: '0 0 20px 0'}}>
+        <div style={{margin: '0 0 20px 0', color: 'whitesmoke'}}>
             <h3>HTML พื้นฐาน</h3>
             <ReactPlayer url='https://www.youtube.com/watch?v=0hfeNPM7piw&t=1308s' width='auto' />
         </div>
-        <div style={{margin: '0 0 20px 0'}}>
+        <div style={{margin: '0 0 20px 0', color: 'whitesmoke'}}>
             <h3>REACT พื้นฐาน</h3>
             <ReactPlayer url='https://www.youtube.com/watch?v=KvNfS86KEA4&t=17331s' width='auto' />
         </div>
-        <div style={{margin: '0 0 55px 0'}}>
+        <div style={{margin: '0 0 55px 0', color: 'whitesmoke'}}>
             <h3>JavaScript พื้นฐาน</h3>
             <ReactPlayer url='https://www.youtube.com/watch?v=AbjY-ajKgSI&t=987s' width='auto' />
         </div>
