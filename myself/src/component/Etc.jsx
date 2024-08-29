@@ -24,7 +24,7 @@ function Etc () {
             OTHER
           </h2>
         </div>
-        <div>
+        <div style={{color: 'whitesmoke'}}>
             <h2>
                 เวลาว่างได้ศึกษาสิ่งต่างๆ เพิ่มเติมได้แก่
             </h2>
