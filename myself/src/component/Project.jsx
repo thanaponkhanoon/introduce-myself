@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { Worker, Viewer } from '@react-pdf-viewer/core';
+//import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
@@ -167,8 +167,8 @@ function Project() {
         ))}
       </div>
             </div>
-            <strong style={{ fontSize: '18px', margin: '0 0 0 40px'}}>เอกสารรายงาน</strong>
-            {/* Display PDF in a framed area */}
+            {/* <strong style={{ fontSize: '18px', margin: '0 0 0 40px'}}>เอกสารรายงาน</strong>
+            Display PDF in a framed area
             <div style={{ margin: '20px auto', width: isMobile ? '100%' : '80%', height: '900px', overflow: 'auto', padding: '10px' }}>
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                     <Viewer
@@ -177,7 +177,7 @@ function Project() {
                         initialPage={8} // Start from the first page
                     />
                 </Worker>
-            </div>
+            </div> */}
             </Box>
         </div>
         <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 55px 80px', color: 'white'}}>  
@@ -293,8 +293,8 @@ function Project() {
         ))}
       </div>
             </div>
-            <strong style={{ fontSize: '18px', margin: '0 0 0 40px'}}>เอกสารรายงาน</strong>
-            {/* Display PDF in a framed area */}
+            {/* <strong style={{ fontSize: '18px', margin: '0 0 0 40px'}}>เอกสารรายงาน</strong>
+            Display PDF in a framed area
             <div style={{ margin: '20px auto', width: isMobile ? '100%' : '80%', height: '900px', overflow: 'auto', padding: '10px' }}>
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                     <Viewer
@@ -303,7 +303,7 @@ function Project() {
                         initialPage={1} // Start from the first page
                     />
                 </Worker>
-            </div>
+            </div> */}
             </Box>
         </div>
         </>
