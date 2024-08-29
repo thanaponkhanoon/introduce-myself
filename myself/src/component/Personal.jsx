@@ -6,7 +6,7 @@ function Personal () {
   const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 60px', color: 'whitesmoke'};
+    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 0', color: 'whitesmoke'};
     const boxStyle = { 
         width: isMobile ? '100%' : '800px', // Full width on mobile
         height: 'auto', 
@@ -36,7 +36,7 @@ function Personal () {
             PERSONAL INFORMATION
           </h2>
         </div>
-        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 0 30px', color: 'white'}}>  
+        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 70px 0 30px', color: 'white'}}>  
         <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
             <div style={{margin: '0px 0 0 20px'}}>
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: isMobile ? 'center' : 'center'}}>
@@ -66,14 +66,14 @@ function Personal () {
                         ข้อมูลส่วนตัว
                     </h3>
                     <div style={par}>
-                        <strong style={{margin: '0 15px 0 0'}}>ชื่อ - นามสกุล </strong>นายธนพล  ไชยนิตย์
-                        <strong style={{margin: '0 15px 0 30px'}}>ชื่อเล่น </strong>ขนุน<br/>
-                        <strong style={{margin: '0 15px 0 0'}}>วันเกิด </strong>13 พฤศจิกายน 2000
-                        <strong style={{margin: '0 15px 0 78px'}}>อายุ </strong>23 ปี<br/>
-                        <strong style={{margin: '0 15px 0 0'}}>สัดส่วน </strong>สูง 167 เซนติเมตร หนัก 55 กิโลกรัม<br/>
-                        <strong style={{margin: '0 15px 0 0'}}>Email </strong>thanaponkhanoon1123@gmail.com<br/>
-                        <strong style={{margin: '0 15px 0 0'}}>Line </strong>0639680529<br/>
-                        <strong style={{margin: '0 15px 0 0'}}>เบอร์โทรศัพท์ </strong>0639680529
+                        <strong>ชื่อ - นามสกุล : </strong>นายธนพล  ไชยนิตย์<br/>
+                        <strong>ชื่อเล่น : </strong>ขนุน<br/>
+                        <strong>วันเกิด : </strong>13 พฤศจิกายน 2000<br/>
+                        <strong>อายุ : </strong>23 ปี<br/>
+                        <strong>สัดส่วน : </strong>สูง 167 เซนติเมตร หนัก 55 กิโลกรัม<br/>
+                        <strong>Email : </strong>thanaponkhanoon1123@gmail.com<br/>
+                        <strong>Line : </strong>0639680529<br/>
+                        <strong>เบอร์โทรศัพท์ : </strong>0639680529<br/>
                     </div>
                     <h3 style={{margin: '20px 0 10px 40px'}}>
                         ภูมิลำเนา
@@ -116,8 +116,8 @@ function Personal () {
                         <div style={{fontSize: "14px", marginLeft: '15px'}}>
                         -React<br/>
                         -Mui<br/>
-                        -Svlte<br/>
-                        -Flowbite svelte
+                        -Svelte<br/>
+                        -Flowbite Svelte
                         </div>
                         <strong style={{fontSize: "17px", margin: '0 15px 0 0'}}>Application</strong>อยู่ในระดับพื้นฐานถึงปานกลาง<br/>
                         <div style={{fontSize: "14px", marginLeft: '15px'}}>
@@ -143,7 +143,7 @@ function Personal () {
                         <div style={{fontSize: "14px", marginLeft: '15px'}}>
                         -เป็นมือใหม่ในด้านพัฒนาเว็บไซต์ ทั้ง Font-End Back-End และ Full Stack<br/>
                         -ขาดความมั่นใจในตัวเอง<br/>
-                        -เหม่อลอยบางครั้ง เนื่องจากคิดเรื่องต่างๆ ในหัวเพลิน
+                        -เหม่อลอยบางครั้ง
                         </div>
                      </div>
                      <h3 style={{margin: '20px 0 10px 40px'}}>

@@ -14,7 +14,7 @@ function Project() {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 60px', color: 'whitesmoke' };
+    const par = { margin: isMobile ? '10px 15px' : '20px 0 10px 60px', color: 'whitesmoke' };
     const boxStyle = { 
         width: isMobile ? '100%' : '1000px',
         height: 'auto', 
@@ -50,7 +50,7 @@ function Project() {
             MY PROJECT
           </h2>
         </div>
-        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 0 80px', color: 'white'}}>  
+        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 70px 0 30px', color: 'white'}}>  
         <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
             <div style={{margin: '0px 20px 0 20px'}}>
                 <span>
@@ -98,7 +98,7 @@ function Project() {
                 </span>
                 <strong style={{ fontSize: '18px', margin: '0 0 0 20px'}}>ระบบหลัก ระบบห้องสมุด</strong>
                 <span>
-                    <h3 style={{margin: '20px 0 10px 40px'}}>
+                    <h3 style={{margin: '20px 0 10px 30px', fontSize: '16px'}}>
                         เป็นระบบที่ประกอบไปด้วยระบบย่อยทั้งหมด 12 ระบบย่อย โดยระบบที่ผมได้รับผิดชอบ 2 ระบบย่อย ได้แก่
                     </h3>
                     <div style={par}>
@@ -229,7 +229,7 @@ function Project() {
                 </span>
                 <strong style={{ fontSize: '18px', margin: '0 0 0 20px'}}>ระบบหลัก ระบบการจองใช้ห้อง</strong>
                 <span>
-                    <h3 style={{margin: '20px 0 10px 40px'}}>
+                    <h3 style={{margin: '20px 0 10px 40px', fontSize: '16px'}}>
                         เป็นระบบที่ประกอบไปด้วยระบบย่อยทั้งหมด 7 ระบบย่อย โดยระบบที่ผมได้รับผิดชอบ 1 ระบบย่อย ได้แก่
                     </h3>
                     <div style={par}>
