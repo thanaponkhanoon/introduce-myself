@@ -7,7 +7,7 @@ import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 //import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+//import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 function Project() {
@@ -23,9 +23,9 @@ function Project() {
     };
 
     // Initialize the default layout plugin without using 'defaultTabs'
-    const defaultLayoutPluginInstance = defaultLayoutPlugin({
-        sidebarTabs: () => [], // Hide the sidebar without using the 'defaultTabs' parameter
-    });
+    // const defaultLayoutPluginInstance = defaultLayoutPlugin({
+    //     sidebarTabs: () => [], // Hide the sidebar without using the 'defaultTabs' parameter
+    // });
 
     return (
         <>
