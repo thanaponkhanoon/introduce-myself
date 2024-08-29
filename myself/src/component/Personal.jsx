@@ -6,7 +6,7 @@ function Personal () {
   const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 0', color: 'whitesmoke'};
+    const par = { margin: isMobile ? '10px 0' : '20px 0 10px 60px', color: 'whitesmoke'};
     const boxStyle = { 
         width: isMobile ? '100%' : '800px', // Full width on mobile
         height: 'auto', 
