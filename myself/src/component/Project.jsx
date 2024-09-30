@@ -180,7 +180,7 @@ function Project() {
             </div> */}
             </Box>
         </div>
-        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 80px 55px 80px', color: 'white'}}>  
+        <div style={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', margin: '0 70px 50px 30px', color: 'white'}}>  
         <Box component="section" sx={{ p: 2, border: '1px dashed black' }} style={boxStyle}>
             <div style={{margin: '0 0 0 20px'}}>
                 <span>

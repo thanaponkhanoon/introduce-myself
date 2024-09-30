@@ -55,7 +55,7 @@ function Education() {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <img
-            src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/457137036_2209843539379037_6645935567311944750_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHpYSKe9_a0n_4AxlCX1XbzaHH_jx7QU_tocf-PHtBT-87ePeP0zzwI8PwmHiTNrUIg1ehStk2v9F86D954jdBI&_nc_ohc=xRUMO0qKzyEQ7kNvgGAzMad&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&oh=00_AYDydV8OhTDH77u-lUZ-DEFg3khRNegrCPo5lehZj2Ywqg&oe=66D5A4F4"
+            src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/457137036_2209843539379037_6645935567311944750_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHpYSKe9_a0n_4AxlCX1XbzaHH_jx7QU_tocf-PHtBT-87ePeP0zzwI8PwmHiTNrUIg1ehStk2v9F86D954jdBI&_nc_ohc=_flZ3WrqUssQ7kNvgGTvlv9&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&_nc_gid=Afw7LBk50qy6oXLKq_Uz2Uk&oh=00_AYBkws5zB5U0OR_Ej-O6UUz7VviWHmbmkMmGpRGh25m6og&oe=67004574"
             alt="Description of image"
             style={{
               width: '150px',
@@ -70,7 +70,7 @@ function Education() {
             <h3 style={{ margin: '10px 0' }}>Senior high school and Junior high school</h3>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img
-                src="https://scontent.fbkk22-2.fna.fbcdn.net/v/t39.30808-6/309040000_523448236256689_6987209146456801409_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGqmDRzS8iGGz39uFouvPGf33UV-BoiY4vfdRX4GiJji4AClbSiAlLRE9KZfxQHxONWN1JtgJ5CnScw0BD0aH52&_nc_ohc=F9nwh0j-MjcQ7kNvgHmUtZG&_nc_zt=23&_nc_ht=scontent.fbkk22-2.fna&oh=00_AYBZoui3VuljT2jPapqe1_9wLRD1q6-oSG7Q06yFBylkWg&oe=66D1087A"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtR-RZ3OVa5wEs4wfM9mcYUWqBwSZ7heTy7w&s"
                 alt="Kamphaeng Logo"
                 style={{
                   width: '100px',

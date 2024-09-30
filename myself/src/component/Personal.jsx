@@ -41,8 +41,8 @@ function Personal () {
             <div style={{margin: '0px 0 0 20px'}}>
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: isMobile ? 'center' : 'center'}}>
                     <img 
-                        src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/315024483_1784409908589071_3355937588288492795_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFqK0icyCA3qxm2OOQl7Nt_1E2mUx7aAdXUTaZTHtoB1cRuG0Fow3kYqQKHSh1CEoYEb0HjHFSh_dVSdsY-8dfj&_nc_ohc=kshEqYzfqkYQ7kNvgFds7b0&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&oh=00_AYCpSBFxvtxCexO3HdL8hv8Ex8esiAOdEV07mTGZ4141xA&oe=66D4573E"
-                        alt="KIG Logo"
+                        src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/315024483_1784409908589071_3355937588288492795_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFqK0icyCA3qxm2OOQl7Nt_1E2mUx7aAdXUTaZTHtoB1cRuG0Fow3kYqQKHSh1CEoYEb0HjHFSh_dVSdsY-8dfj&_nc_ohc=MO7qQr14oLkQ7kNvgFJkEXu&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&oh=00_AYAnW_64VGg7KlXHo1FqcxhyXTjLFFa-khmBttWzKsCi9Q&oe=6700493E"
+                        alt="IT ME"
                         style={{
                             width: isMobile ? '150px' : '200px',
                             display: 'flex',
